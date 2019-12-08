@@ -5,8 +5,11 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".MainActivity">
+    android:background= "@drawable/background"
+
+    tools:context=".MainActivity"
+
+    >
 
     <TextView
         android:id="@+id/textView"
