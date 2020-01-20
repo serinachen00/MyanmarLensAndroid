@@ -1,4 +1,4 @@
-package com.example.myanmarlensandroid;
+package com.example.myanmarlensandroid.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+
+import com.example.myanmarlensandroid.Favorites.FavoritesActivity;
+import com.example.myanmarlensandroid.R;
+import com.example.myanmarlensandroid.Scan.ScanActivity;
+import com.example.myanmarlensandroid.History.WordsActivity;
 
 public class MainActivity extends AppCompatActivity {
 

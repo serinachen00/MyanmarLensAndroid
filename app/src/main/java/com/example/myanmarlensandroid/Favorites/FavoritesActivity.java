@@ -1,7 +1,8 @@
-package com.example.myanmarlensandroid;
+package com.example.myanmarlensandroid.Favorites;
 
 import android.os.Bundle;
 
+import com.example.myanmarlensandroid.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -21,13 +22,13 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
-public class WordsActivity extends AppCompatActivity
+public class FavoritesActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_words);
+        setContentView(R.layout.activity_favorites);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -60,7 +61,7 @@ public class WordsActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.words, menu);
+        getMenuInflater().inflate(R.menu.favorites, menu);
         return true;
     }
 

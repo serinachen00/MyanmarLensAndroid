@@ -10,15 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".FavoritesActivity"
+            android:name=".Favorites.FavoritesActivity"
             android:label="@string/title_activity_favorites"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".WordsActivity"
+            android:name=".History.WordsActivity"
             android:label="@string/title_activity_words"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ScanActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Scan.ScanActivity" />
+        <activity android:name=".Main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

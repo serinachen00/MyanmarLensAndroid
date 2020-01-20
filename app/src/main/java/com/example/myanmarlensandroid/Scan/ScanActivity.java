@@ -1,8 +1,10 @@
-package com.example.myanmarlensandroid;
+package com.example.myanmarlensandroid.Scan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.myanmarlensandroid.R;
 
 public class ScanActivity extends AppCompatActivity {
 
@@ -12,3 +14,4 @@ public class ScanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scan);
     }
 }
+
