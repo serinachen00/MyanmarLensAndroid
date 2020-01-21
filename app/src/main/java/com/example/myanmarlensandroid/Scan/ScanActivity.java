@@ -1,4 +1,4 @@
-package com.example.myanmarlensandroid;
+package com.example.myanmarlensandroid.Scan;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +19,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.example.myanmarlensandroid.R;
 
 public class ScanActivity extends AppCompatActivity {
 
@@ -117,3 +119,4 @@ public class ScanActivity extends AppCompatActivity {
         }
     }
 }
+
