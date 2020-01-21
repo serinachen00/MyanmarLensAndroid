@@ -24,6 +24,7 @@ import com.example.myanmarlensandroid.R;
 
 public class ScanActivity extends AppCompatActivity {
 
+//This is testing//
 
     Button takepic;
     ImageView mImageView;
