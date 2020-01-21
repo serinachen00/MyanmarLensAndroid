@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout"
@@ -8,16 +8,31 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".ScanActivity">
 
-    <TextView
-        android:id="@+id/scantext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:layout_marginStart="173dp"
-        android:layout_marginTop="366dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="346dp"
-        android:text="scan page"
-        android:textColor="@color/white"
-         />
-</RelativeLayout>
+    <!-- image view in which the captured image will be set -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/capture_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/capture_image_btn"
+        android:layout_width="313dp"
+        android:layout_height="80dp"
+
+        android:layout_marginBottom="149dp"
+        android:text="Take Picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

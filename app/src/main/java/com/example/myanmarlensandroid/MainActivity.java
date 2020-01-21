@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Below are each buttons that perform action when clicked
-        scan = (Button) findViewById(R.id.scan);
+        scan = (Button) findViewById(R.id.scans);
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
