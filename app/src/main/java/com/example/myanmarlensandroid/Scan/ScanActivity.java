@@ -40,8 +40,6 @@ public class ScanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
 
-
-
         mImageView = findViewById(R.id.image_view);
         takepic = findViewById(R.id.capture_image_btn);
         takepic.setOnClickListener(new View.OnClickListener() {
