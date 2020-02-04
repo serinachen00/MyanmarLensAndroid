@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.myanmarlensandroid.Managers.camera;
+package com.example.myanmarlensandroid.Scan.Camera;
 
 import android.Manifest;
 import android.content.Context;
@@ -26,6 +26,8 @@ import android.view.SurfaceView;
 import android.view.ViewGroup;
 
 import androidx.annotation.RequiresPermission;
+
+//import com.google.android.gms.common.images.Size;
 
 import com.google.android.gms.common.images.Size;
 

@@ -21,7 +21,7 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.SparseArray;
 
-import com.example.myanmarlensandroid.Managers.camera.GraphicOverlay;
+import com.example.myanmarlensandroid.Scan.Camera.GraphicOverlay;
 import com.google.android.gms.vision.text.Text;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
