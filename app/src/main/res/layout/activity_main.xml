@@ -5,17 +5,20 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background= "@drawable/background"
+    android:background="@drawable/bg"
 
-    tools:context=".Main.MainActivity"
+    android:visibility="visible"
 
-    >
+    tools:context=".Main.MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:fontFamily="monospace"
         android:text="Myanmar Lens Android"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,14 +28,14 @@
 
     <Button
         android:id="@+id/scans"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="81dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="8dp"
-        android:alpha="0.55"
+        android:alpha="1"
         android:background="@android:drawable/ic_menu_camera"
-        android:text="Scan"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -52,9 +55,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="8dp"
-        android:alpha="0.55"
+        android:alpha="1"
         android:background="@android:drawable/ic_input_get"
-        android:text="Words"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -74,9 +76,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:alpha="0.55"
         android:background="@android:drawable/star_big_off"
-        android:text="Favorites"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -92,12 +92,10 @@
         android:id="@+id/imageView"
         android:layout_width="182dp"
         android:layout_height="173dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/backgrounds/scenic[5]" />
+        tools:srcCompat="@drawable/bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

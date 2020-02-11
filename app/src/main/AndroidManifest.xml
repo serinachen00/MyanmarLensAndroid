@@ -26,7 +26,7 @@
             android:name=".History.WordsActivity"
             android:label="@string/title_activity_words"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Scan.ScanActivity" />
+        <activity android:name=".Scan.Activities.ScanActivity" />
         <activity android:name=".Main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".Scan.ScanActivity">
+    tools:context=".Scan.Activities.ScanActivity">
 
-    <com.example.myanmarlensandroid.Scan.Camera.CameraSourcePreview
+    <com.example.myanmarlensandroid.Scan.Views.Camera.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,10 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.example.myanmarlensandroid.Scan.Camera.GraphicOverlay
+        <com.example.myanmarlensandroid.Scan.Views.Camera.GraphicOverlay
             android:id="@+id/graphicOverlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-    </com.example.myanmarlensandroid.Scan.Camera.CameraSourcePreview>
+
+    </com.example.myanmarlensandroid.Scan.Views.Camera.CameraSourcePreview>
+
+    <Button
+        android:id="@+id/cameraButton"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@android:drawable/ic_menu_camera"
+        android:onClick="handleOnClickCameraButton"
+        app:layout_constraintBottom_toBottomOf="@+id/preview"
+        app:layout_constraintEnd_toEndOf="@+id/preview"
+        app:layout_constraintStart_toStartOf="@+id/preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

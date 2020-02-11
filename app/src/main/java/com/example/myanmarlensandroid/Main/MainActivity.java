@@ -9,7 +9,7 @@ import android.content.Intent;
 
 import com.example.myanmarlensandroid.Favorites.FavoritesActivity;
 import com.example.myanmarlensandroid.R;
-import com.example.myanmarlensandroid.Scan.ScanActivity;
+import com.example.myanmarlensandroid.Scan.Activities.ScanActivity;
 import com.example.myanmarlensandroid.History.WordsActivity;
 
 public class MainActivity extends AppCompatActivity {
