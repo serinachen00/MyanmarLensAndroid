@@ -34,7 +34,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
     private static Paint textPaint;
     private final TextBlock textBlock;
 
-    OcrGraphic(GraphicOverlay overlay, TextBlock _textBlock) {
+    public OcrGraphic(GraphicOverlay overlay, TextBlock _textBlock) {
         super(overlay);
 
         textBlock = _textBlock;

@@ -18,6 +18,7 @@ package com.example.myanmarlensandroid.Scan;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.util.Log;
 
 import com.example.myanmarlensandroid.Scan.Camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
@@ -40,7 +41,8 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
         super(overlay);
 
         this.text = text;
-
+       // System.out.println(text);
+       // Log.d("myTag", "hahahahhahahahahahhahhahahhhahahahhahahhahahahaah");
         if (rectPaint == null) {
             rectPaint = new Paint();
             rectPaint.setColor(TEXT_COLOR);
